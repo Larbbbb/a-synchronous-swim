@@ -19,7 +19,9 @@
     });
   };
 
-  setInterval(function () {commandFetch(function(data) {SwimTeam.move(data.toLowerCase())})}, 50);
+  setInterval(function () {commandFetch(function(data) {
+    SwimTeam.move(data.toLowerCase());
+  })}, 50);
 
   /////////////////////////////////////////////////////////////////////
   // The ajax file uplaoder is provided for your convenience!
