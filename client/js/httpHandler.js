@@ -23,6 +23,8 @@
     SwimTeam.move(data.toLowerCase());
   })}, 50);
 
+
+
   /////////////////////////////////////////////////////////////////////
   // The ajax file uplaoder is provided for your convenience!
   // Note: remember to fix the URL below.
@@ -31,10 +33,11 @@
   const ajaxFileUplaod = (file) => {
     var formData = new FormData();
     formData.append('file', file);
+
     $.ajax({
       type: 'POST',
       data: formData,
-      url: serverUrl,
+      url: '/background.jpg',
       cache: false,
       contentType: false,
       processData: false,
@@ -61,6 +64,7 @@
     }
 
     ajaxFileUplaod(file);
+
   });
 
 })();
